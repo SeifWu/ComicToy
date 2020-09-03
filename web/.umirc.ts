@@ -10,6 +10,7 @@ const config: IConfig = {
       routes: [
         { path: '/', component: '../pages/index' },
         { exact: true, path: '/detail/:id', component: '../pages/comic/show' },
+        { exact: true, path: '/detail/:pid/:id', component: '../pages/comic/detail' },
       ]
     }
   ],

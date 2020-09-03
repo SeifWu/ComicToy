@@ -525,12 +525,513 @@ export default {
           "CreatedAt": "2020-09-03T06:45:31Z",
           "UpdatedAt": "2020-09-03T06:45:31Z",
           "DeletedAt": null,
-          "num": "第49话",
+          "num": "第490话 ww",
           "url": "gfmh/manhua/guimiezhiren/104042.html",
           "ComicID": 2,
           "ComicChapterDetail": null
         },
       ]
     }
+  },
+
+  'GET /api/v1/public/comic_chapter/:id': {
+    "data": {
+      "ID": 501,
+      "CreatedAt": "2020-09-03T06:45:31Z",
+      "UpdatedAt": "2020-09-03T06:45:31Z",
+      "DeletedAt": null,
+      "num": "第01话",
+      "url": "gfmh/manhua/guimiezhiren/26396.html",
+      "ComicID": 2,
+      "ComicChapterDetail": [
+        {
+          "ID": 1,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/1481921916178263960c26f3e61.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 2,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219169592639615753f123.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 3,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/1481921918667263962c46cb34b.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 4,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/148192191908626396316020968.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 5,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/1481921919681263964aae6bc3f.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 6,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219202952639653fcb6f01.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 7,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/1481921921776263966d4b021c3.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 8,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219224352639676994d485.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 9,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/1481921922675263968fe798747.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 10,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/1481921923714263969ca20e3de.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 11,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/148192192439426396105f0596a0.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 12,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219245082639611f3ea4962.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 13,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/1481921925116263961288cefc24.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 14,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/148192192587626396131db3aee6.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 15,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219264712639614b2986448.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 16,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219274692639615477d170a.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 17,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219277962639616dc61c9cc.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 20,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/1481921928877263961771467c8e.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 25,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26397/14819219740422639718f465b230.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 28,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26397/14819219754162639719c00d0ec7.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 31,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26397/1481921976416263972054f1c19e.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 34,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26397/14819219780592639721e9d67460.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 36,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26397/148192199429126397227ebb2722.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 39,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26397/14819219817002639723139fd9e4.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 41,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26397/14819219835862639724a8848ca6.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 44,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/148192193566226396254f2ebc88.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 46,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219359322639626e4136f4a.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 48,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/1481921937232263962778f8220c.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 51,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219374782639628ddcd4ce.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 53,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219407072639629d9843165.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 55,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/148192193878026396306e68e427.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 57,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/1481921938973263963134d96e9.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 58,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219408512639632983249ab.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 59,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/148192194141126396332d16fc6d.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 60,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219416462639634c1fbaf44.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 61,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/1481921942051263963556e06206.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 62,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219430292639636ebc514c8.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 63,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/1481921944183263963780a9c78a.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 64,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219444482639638158e7a4c.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 69,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219454642639639e135d6e3.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 75,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219462312639640761a89a5.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 79,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219467272639641aff3c67.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 83,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/148192194802226396429fe3ef29.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 87,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/1481921948243263964334c8a1eb.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 90,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:24Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219492142639644c9ad54c2.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 93,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:25Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/148192194940326396455e920784.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 95,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:25Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219500852639646f376ba46.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 96,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:25Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219505862639647885b6d08.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 97,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:25Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/148192195106626396481d401fca.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 98,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:25Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219515062639649e8e77c61.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 99,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:25Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/148192195201626396507dcc2f23.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 100,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:25Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/1481921952583263965112b0e1e5.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 101,
+          "CreatedAt": "2020-09-03T07:04:24Z",
+          "UpdatedAt": "2020-09-03T07:04:25Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/14819219532142639652a79594a7.jpg",
+          "ComicChapterID": 501
+        },
+        {
+          "ID": 102,
+          "CreatedAt": "2020-09-03T07:04:25Z",
+          "UpdatedAt": "2020-09-03T07:04:25Z",
+          "DeletedAt": null,
+          "Postion": 0,
+          "img": "https://res.xiaoqinre.com/images/comic/14/26396/148192195422526396533c7a4769.jpg",
+          "ComicChapterID": 501
+        }
+      ]
+    },
+    "success": true
   }
 }
