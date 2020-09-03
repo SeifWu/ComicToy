@@ -2,6 +2,8 @@ package routers
 
 import (
 	v1api "seifwu/app/controllers/api/v1"
+	v1managerapi "seifwu/app/controllers/api/v1/manager"
+	v1publicapi "seifwu/app/controllers/api/v1/public"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-contrib/sessions/redis"
@@ -27,6 +29,15 @@ func Routers() *gin.Engine {
 		v1.POST("/send_mail", v1api.SendAuthCodeMailsController)
 		// 登录
 		v1.POST("/login", v1api.Login)
+		// 爬虫 Comic
+		v1.POST("/comic", v1managerapi.CreateComic)
+
+		public := v1.Group("/public")
+		{
+			public.GET("/comic", v1publicapi.FetchComicList)
+			public.GET("/comic/:id", v1publicapi.FetchComicDetail)
+			public.GET("/comic_chapter/:id", v1publicapi.FetchComicContent)
+		}
 	}
 
 	UserRoutes(router)
