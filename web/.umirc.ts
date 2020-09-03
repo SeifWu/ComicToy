@@ -1,17 +1,22 @@
 import { IConfig } from 'umi-types';
 
 // ref: https://umijs.org/config/
-const config: IConfig =  {
+const config: IConfig = {
   treeShaking: true,
   routes: [
     {
       path: '/',
       component: '../layouts/index',
       routes: [
-        { path: '/', component: '../pages/index' }
+        { path: '/', component: '../pages/index' },
+        { exact: true, path: '/detail/:id', component: '../pages/comic/show' },
       ]
     }
   ],
+  theme: {
+    // ...darkTheme,
+    'primary-color': "#002766",
+  },
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
@@ -20,7 +25,7 @@ const config: IConfig =  {
       dynamicImport: { webpackChunkName: true },
       title: 'web',
       dll: false,
-      
+
       routes: {
         exclude: [
           /models\//,

@@ -1,18 +1,48 @@
+
 import React from 'react';
 import styles from './index.css';
+import background from '@/assets/yay.jpg';
+import ComicCard from '@/components/ComicCard';
+import request from 'umi-request';
 
-export default function() {
-  return (
-    <div className={styles.normal}>
-      <div className={styles.welcome} />
-      <ul className={styles.list}>
-        <li>To get started, edit <code>src/pages/index.js</code> and save to reload.</li>
-        <li>
-          <a href="https://umijs.org/guide/getting-started.html">
-            Getting Started
-          </a>
-        </li>
-      </ul>
-    </div>
-  );
+
+export interface IAppProps {
 }
+
+export default class App extends React.Component<IAppProps> {
+  state = {
+    loading: false,
+    data: [],
+  }
+
+  componentDidMount() {
+    this.setState({
+      loading: true,
+    });
+
+    const that = this
+    request
+      .get('/api/v1/public/comic')
+      .then(function (response) {
+        that.setState({
+          loading: false,
+          data: response.data
+        });
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+
+  render() {
+    const { loading, data } = this.state;
+    return (
+      <>
+        <div style={{ padding: 12 }}>
+          <ComicCard data={data} />
+        </div>
+      </>
+    );
+  }
+}
+
