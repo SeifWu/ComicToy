@@ -23,7 +23,7 @@ interface State {
 
 interface Props {
   id: any;
-  match: any;
+  location: any;
 }
 
 class index extends PureComponent<Props, State> {
@@ -36,7 +36,8 @@ class index extends PureComponent<Props, State> {
   }
 
   componentDidMount() {
-    const { match: { params: { id } } } = this.props;
+    const { location: { query: { id } } } = this.props;
+    // console.log(this.props)
     this.setState({
       loading: true,
     });
@@ -56,7 +57,6 @@ class index extends PureComponent<Props, State> {
 
   render() {
     const { data } = this.state;
-    console.log(data)
     return (
       <div>
         <div className="lay-head"

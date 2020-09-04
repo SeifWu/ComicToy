@@ -16,7 +16,7 @@ interface Props {
 export default class index extends PureComponent<Props> {
   render() {
     const { data = [] } = this.props;
-    console.log(data)
+    // console.log(data)
     return (
       <Row gutter={32}>
         {
@@ -35,7 +35,10 @@ export default class index extends PureComponent<Props> {
                 paddingRight: 0,
               }}
             >
-              <Link to={`/detail/${item.id}`}>
+              <Link to={{
+                pathname: "/detail",
+                search: `?id=${item.id}`
+              }}>
                 <div
                   className="comic-cover"
                   style={{

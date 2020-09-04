@@ -12,10 +12,10 @@ import (
 
 type ComicLRYApiStruct struct {
 	Data struct {
-		Author    string
-		Cover     string
-		Introduce string
-		Name      string
+		Author    string `json:"author"`
+		Cover     string `json:"cover"`
+		Introduce string `json:"introduce"`
+		Name      string `json:"name"`
 	} `json:"data"`
 	List []model.ComicChapter `json:"list"`
 }
@@ -42,7 +42,7 @@ func ComicLRYApiCrawler(url string) ComicLRYApiStruct {
 		}
 	})
 
-	c.Visit("http://47.114.147.221/?mhurl1=gfmhhttps://m.gufengmh8.com/manhua/guimiezhiren/")
+	c.Visit(url)
 
 	return result
 }

@@ -9,8 +9,8 @@ const config: IConfig = {
       component: '../layouts/index',
       routes: [
         { path: '/', component: '../pages/index' },
-        { exact: true, path: '/detail/:id', component: '../pages/comic/show' },
-        { exact: true, path: '/detail/:pid/:id', component: '../pages/comic/detail' },
+        { exact: true, path: '/detail', component: '../pages/comic/show' },
+        { exact: true, path: '/detail/content', component: '../pages/comic/detail' },
       ]
     }
   ],

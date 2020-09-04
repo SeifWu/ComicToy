@@ -61,7 +61,7 @@ func fetchDetail(list []model.ComicChapter) {
 
 	// create a request queue with 2 consumer threads
 	q, _ := queue.New(
-		2, // Number of consumer threads
+		1, // Number of consumer threads
 		&queue.InMemoryQueueStorage{MaxSize: 10000}, // Use default queue storage
 	)
 

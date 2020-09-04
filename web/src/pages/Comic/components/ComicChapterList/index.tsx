@@ -14,7 +14,7 @@ export default class index extends Component<Props, State> {
 
   render() {
     const { data = [] } = this.props;
-    console.log(data)
+    // console.log(data)
     return (
       <div style={{ padding: 16 }}>
         <Row gutter={[8, 8]}>
@@ -25,9 +25,8 @@ export default class index extends Component<Props, State> {
               return <Col key={item.ID} span={6}>
                 <Link
                   to={{
-                    pathname: `/detail/${item.ComicID}/${item.ID}`,
-                    search: `?prev=${prev}&next=${next}`,
-                    state: { data: data },
+                    pathname: "/detail/content",
+                    search: `?id=${item.ID}`
                   }}
                   style={{
                     display: "block",

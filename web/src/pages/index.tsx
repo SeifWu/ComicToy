@@ -30,7 +30,6 @@ export default class App extends React.Component<IAppProps> {
         });
       })
       .catch(function (error) {
-        console.log(error);
       });
   }
 

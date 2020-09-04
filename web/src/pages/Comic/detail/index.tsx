@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button, Row, Col } from 'antd';
 import request from 'umi-request';
 import { Link } from 'umi';
 
@@ -34,10 +35,11 @@ export default class index extends Component<Props, State> {
   }
 
   componentDidMount() {
-    const { match: { params: { id } }, location: { query: { next, prev } } } = this.props;
-    console.log(this.props)
-    console.log(next, prev)
+    const { location: { query: { id } } } = this.props;
+    this.loadData(id)
+  }
 
+  loadData = (id: any) => {
     this.setState({
       loading: true,
     });
@@ -70,18 +72,13 @@ export default class index extends Component<Props, State> {
 
   render() {
     const { data, comicData } = this.state;
-    let prev = undefined
-    let next = undefined
+    let prev = 0
+    let next = 0
     const currentIndex = (comicData.ComicChapter || []).findIndex((item: any) => data.ID == item.ID)
     if ((comicData.ComicChapter || []).length > 0 && currentIndex > -1) {
       prev = currentIndex - 1 < 0 ? undefined : comicData.ComicChapter[currentIndex - 1].ID;
       next = currentIndex + 1 > comicData.ComicChapter.length - 1 ? undefined : comicData.ComicChapter[currentIndex + 1].ID
     }
-    console.log(currentIndex)
-    console.log(prev)
-    console.log(next)
-    console.log(data)
-    console.log(comicData)
     return (
       <div>
         <div style={{ height: "100vh" }}>
@@ -96,48 +93,24 @@ export default class index extends Component<Props, State> {
             })
           }
         </div>
-        <div>
-
-          <Link
-            to={{
-              pathname: `/detail/${comicData.id}/${prev}`
-            }}
-            style={{
-              margin: "12px auto",
-              display: "block",
-              width: "75%",
-              whiteSpace: "nowrap",
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-              padding: 4,
-              border: "1px dashed #d9d9d9",
-              borderRadius: 2,
-              textAlign: "center",
-            }}
-          >
-            上一话
-          </Link>
-
-          <Link
-            to={{
-              pathname: `/detail/${comicData.id}/${next}`
-            }}
-            style={{
-              margin: "12px auto",
-              display: "block",
-              width: "75%",
-              whiteSpace: "nowrap",
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-              padding: 4,
-              border: "1px dashed #d9d9d9",
-              borderRadius: 2,
-              textAlign: "center",
-            }}
-          >
-            下一话
-          </Link>
+        <div style={{ margin: "32px 0", padding: 12 }}>
+          <Row gutter={12}>
+            {
+              !prev ? null :
+                <Col span={12}>
+                  <Button onClick={() => this.loadData(prev)} type="dashed" block>上一话 </Button>
+                </Col>
+            }
+            {
+              !next ? null :
+                <Col span={12}>
+                  <Button onClick={() => this.loadData(next)} type="dashed" block>下一话 </Button>
+                </Col>
+            }
+          </Row>
         </div>
+
+
       </div>
     );
   }

@@ -1,6 +1,8 @@
 package routers
 
 import (
+	"path"
+	"path/filepath"
 	v1api "seifwu/app/controllers/api/v1"
 	v1managerapi "seifwu/app/controllers/api/v1/manager"
 	v1publicapi "seifwu/app/controllers/api/v1/public"
@@ -24,6 +26,18 @@ func Routers() *gin.Engine {
 	store.Options(sessions.Options{Path: "/", MaxAge: 2629746, HttpOnly: true})
 
 	router.Use(static.Serve("/", static.LocalFile("dist", true)))
+	router.NoRoute(func(c *gin.Context) {
+		dir, file := path.Split(c.Request.RequestURI)
+		ext := filepath.Ext(file)
+		if file == "" || ext == "" {
+			c.File("dist/index.html")
+		} else {
+			// strings.Split(file, "?")
+			c.File("dist" + path.Join(dir, file))
+		}
+
+	})
+
 	router.Use(sessions.Sessions("appSession", store))
 	v1 := router.Group("/api/v1")
 	{
