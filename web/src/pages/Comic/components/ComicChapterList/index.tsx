@@ -22,7 +22,7 @@ export default class index extends Component<Props, State> {
             data.map((item: any, index: any) => {
               const prev = index - 1 < 0 ? undefined : data[index - 1].ID;
               const next = index + 1 > data.length - 1 ? undefined : data[index + 1].ID
-              return <Col key={item.ID} span={6}>
+              return <Col key={item.ID} span={8}>
                 <Link
                   to={{
                     pathname: "/detail/content",
