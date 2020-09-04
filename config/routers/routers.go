@@ -22,10 +22,9 @@ func Routers() *gin.Engine {
 
 	store, _ := redis.NewStoreWithDB(10, "tcp", "localhost:6379", "", "1", []byte(sessionSecretKey))
 	store.Options(sessions.Options{Path: "/", MaxAge: 2629746, HttpOnly: true})
-	router.Use(sessions.Sessions("appSession", store))
-	// Serve frontend static files
-	router.Use(static.Serve("/", static.LocalFile("./dist", true)))
 
+	router.Use(static.Serve("/", static.LocalFile("dist", true)))
+	router.Use(sessions.Sessions("appSession", store))
 	v1 := router.Group("/api/v1")
 	{
 		// 发送邮件
