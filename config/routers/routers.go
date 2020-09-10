@@ -18,6 +18,7 @@ func Routers() *gin.Engine {
 
 	router := gin.Default()
 	router.LoadHTMLGlob("templates/**/*")
+	router.Static("/assets", "assets")
 
 	store, _ := redis.NewStoreWithDB(10, "tcp", "localhost:6379", "", "1", []byte(sessionSecretKey))
 	store.Options(sessions.Options{Path: "/", MaxAge: 2629746, HttpOnly: true})
