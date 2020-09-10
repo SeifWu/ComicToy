@@ -38,6 +38,7 @@ func Routers() *gin.Engine {
 
 	router.Use(sessions.Sessions("appSession", store))
 	router.GET("/", controller.HomePageController)
+	router.GET("/comic/:id", controller.ComicDetailController)
 
 	v1 := router.Group("/api/v1")
 	{

@@ -1,0 +1,118 @@
+{{ define "comics/index.tmpl" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <title>{{ .title }}</title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/semantic.min.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="/assets/css/semantic.min.css"></script>
+  <style>
+    .comic-lay-head {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      background: transparent;
+    }
+    .comic-lay-head .mod-head {
+      height: 13.45rem;
+      width: 100%;
+      position: relative;
+      display: block;
+    }
+
+    .comic-lay-head .mod-head .head-banner {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    .comic-lay-head .mod-head .head-banner .head-cover {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .comic-lay-content {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 4;
+    }
+    .comic-lay-content .head-info {
+      margin: 8.2rem 0.9rem 0;
+      background-color: #fff;
+      border: 1px solid #fff;
+      border-radius: 0 0 0.3rem 0.3rem;
+      box-shadow: 0 5px 30px 0px #cccccc;
+      padding-bottom:  0.7rem;
+    }
+    .comic-lay-content .head-info .head-info-detail {
+      display: flex;
+      flex-direction: row;
+      padding-top: 1rem;
+      padding-bottom: 0.75rem;
+    }
+    .comic-lay-content .head-info .head-info-detail .head-title-tags {
+      padding-left: 0.975rem;
+      flex: 1;
+    }
+    .comic-lay-content .head-info .head-info-detail .head-title-tags h1 {
+      font-size: 1.2rem;
+      color: #25262b;
+      text-shadow: 0 0 0.075rem rgba(9, 2, 4, 0.1);
+      max-width: 12rem;
+      margin-bottom: 0.6rem;
+      padding-top: 0.2rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .comic-lay-content .head-info .head-info-desc {
+      color: #666666;
+      font-size: 0.6rem;
+      line-height: 0.9rem;
+      margin-bottom: 0.5rem;
+      padding: 0 1.2rem;
+    }
+
+    .comic-lay-content .head-info .head-info-author {
+      padding: 0 1.2rem
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="comic-lay-head">
+      <section class="mod-head">
+        <div class="head-banner">
+          <img src="{{ .data.Cover }}" class="head-cover" alt="" />
+        </div>
+      </section>
+    </div>
+    <div class="comic-lay-content">
+      <section class="head-info">
+        <div class="head-info-detail">
+          <div class="head-title-tags">
+            <h1>{{ .data.Name }}</h1>
+          </div>
+        </div>
+        <div class="head-info-desc">{{ .data.Introduce }}</div>
+        <div class="head-info-author">
+          作者: {{ .data.Author }}
+        </div>
+      </section>
+
+      <!-- <ComicChapterList data={data.ComicChapter} /> -->
+    </div>
+
+  </div >
+
+
+</body>
+</html>
+{{ end }}
