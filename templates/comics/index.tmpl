@@ -7,7 +7,7 @@
   <link rel="shortcut icon" href="/assets/favicon.ico">
   <title>{{ .title }}</title>
   <link rel="stylesheet" type="text/css" href="/assets/css/semantic.min.css">
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="/assets/css/semantic.min.css"></script>
   <style>
     .comic-lay-head {
@@ -83,6 +83,18 @@
     .comic-lay-content .head-info .head-info-author {
       padding: 0 1.2rem
     }
+
+    .comic-chapter-button {
+      display: block;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 4px;
+      border: 1px dashed #d9d9d9;
+      border-radius: 2;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -107,7 +119,18 @@
         </div>
       </section>
 
-      <!-- <ComicChapterList data={data.ComicChapter} /> -->
+      <div class="ui grid container" style="padding-top: 32px; padding-bottom: 64px;">
+        {{ range .data.ComicChapter }}
+          <div class="eight wide column">
+            <a href="/comic/{{ $.data.ID }}/{{ .ID }}" style="display: block;">
+              <button class="ui button comic-chapter-button" >{{ .Name }}</button>
+            </a>
+          </div>
+        {{ else }}
+          <div class="eight wide column">没有数据</div>
+        {{ end }}
+      </div>
+
     </div>
 
   </div >
