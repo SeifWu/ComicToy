@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[1],{"+ego":function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),r=t.n(a),c=e=>{return r.a.createElement(r.a.Fragment,null,e.children)};n["default"]=c}}]);
